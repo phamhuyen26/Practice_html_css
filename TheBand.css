@@ -1,0 +1,292 @@
+/* Reset css */
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+/* 1:xây dựng từ trên xuống dưới 
+2: từ ngoài vào trong 
+3: Tổng quan chi tiết
+*/
+/* 
+1:Vị trí
+2: Kích thước
+3: Màu sắc
+4: Kiểu dáng
+html
+*/
+html{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#main{
+
+}
+.text-white{
+    color: white;
+}
+.clear{
+    clear: both;
+}
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    /*width: auto; */
+    width: 100%;
+    z-index: 1;
+    top:0;
+}
+#nav{
+    display:  inline-block;
+}
+#nav >li {
+    display: inline-block;
+    line-height: 46px;
+    color: #fff;
+    position: relative;
+}
+#nav > li >a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    
+    display: inline-block;
+    
+    padding:0 24px;
+    text-decoration: none;
+}
+#nav .subnav{
+    /* display: none; */
+    position: absolute;
+    background-color:#fff;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#nav ,.subnav{
+    list-style-type: none;
+}
+#nav .subnav li a{
+    color: black;
+    display: block;
+    text-transform: capitalize;
+    padding: 8px 16px;
+    line-height: 22px;
+    min-width: 160px;
+}
+/* Lấy css trực tiếp khi li là con trục tiếp của nav, a co trực tiếp của li */
+
+#nav> li:hover >a,
+#nav  .subnav li:hover a{
+    color: black;
+    background-color: #ccc;
+}
+#nav> li:hover .subnav{
+    display: block;
+}
+#nav .nav-arrow-down{
+    font-size: 13px;
+}
+#header .header-btn{
+    float: right;
+}
+#header .header-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .search-icon{
+    color: white;
+    padding: 0 23px;
+    line-height: 46px;
+}
+#slider {
+    position: relative;
+    margin-top: 46px;
+    background: url('/TheBand/asset/img/Slider1/la.jpg') top center / cover no-repeat;
+    padding-top: 50%;
+}
+#slider #word{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    color: white;
+    padding: 32px 16px;
+    width: 100%;
+    text-align: center;
+}
+#content .title{
+    text-align: center;
+    padding: 64px 16px;
+    font-size: 15px;
+    min-height: 700px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading{
+    margin: 10px 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+#content .section-slogan{
+    margin-top: 15px;
+    /* Làm mờ chữ */
+    opacity: 0.6;
+}
+#content #paragraph-about{
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#content .img-about{
+    margin-top: 48px;
+    
+}
+#content .member1{
+    float:left;
+    width: calc(100%/3);
+}
+#content .img-member{
+    width: 154px;
+    border-radius: 4px;
+}
+#content .name-member{
+    margin: 15px 0;
+}
+.tour-title{
+    background: black;
+}
+.tour-title .list-month{
+    background: white;
+}
+.tour-title ul{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-top: 40px;
+}
+.tour-title li{
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+    text-align: left;
+}
+.tour-title .sold-out{
+    background: #f44336;
+    padding: 0 8px;
+    margin-left: 16px;
+    height: 22px;
+    
+}
+.quantity{
+    border-radius: 50%;
+    background: black;
+    text-align: center;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 22px;
+    margin-right: 16px;
+    float:right;
+}
+.tour-title .buy-ticket{
+    padding: 32px 16px;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+.tour-title .img-buy-ticket {
+    width: 100%;
+}
+.tour-title .img-buy-ticket:hover{
+    opacity: 0.6;
+}
+.tour-title .block-ticket{
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+.block-ticket .place-name{
+    margin: 15px 0;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.block-ticket .buy-ticket-date{
+    opacity: 0.6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tour-title .information-ticket{
+    text-align: left;
+    background: white;
+    padding: 0.150px 16px;
+}
+.block-ticket .button-buy{
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 16px;
+}
+.block-ticket .button-buy:hover{
+    color: black;
+    background-color: gray;
+}
+.input-information{
+    padding: 32px 0;
+    width: 770px;
+    height: 222px;
+}
+.input-information .address-us{
+    position: relative;
+    text-align: left;
+    display:inline-block;
+    line-height: 28px;
+    float: left;
+}
+
+.input-information .icon-setting{
+    width: 30px;
+    margin-right: 15px;
+}
+.input-information .address-us{
+    display: block;
+}
+.input-information .input-message{
+    magin-left: 0;
+}
+.input-information .address-you{
+    display: inline-block;
+}
+.input-information .name-email{
+    display: block;
+    position: relative;
+    padding: 0 8px;
+    margin: 0 -16px 8px;
+}
+
+.address-you .input{
+    height: 40px;
+    padding: 8px;
+}
+.input-information .input-email{
+    float: right;
+}
+.input-information .input-message{
+    float: left;
+    position: absolute;
+    width: 100%;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
